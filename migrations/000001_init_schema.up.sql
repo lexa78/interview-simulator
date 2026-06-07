@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS questions (
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     question TEXT NOT NULL UNIQUE,
+     answer TEXT NOT NULL UNIQUE,
+     status TINYINT DEFAULT 1,
+     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+     updated_at  DATETIME
+);
