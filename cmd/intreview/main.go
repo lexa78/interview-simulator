@@ -43,6 +43,7 @@ func createQuestionsMap() map[domain.QuestionStatus]map[int64]*domain.Question {
 	result[domain.StatusRed] = make(map[int64]*domain.Question)
 	result[domain.StatusYellow] = make(map[int64]*domain.Question)
 	result[domain.StatusGreen] = make(map[int64]*domain.Question)
+	result[domain.StatusUnknown] = make(map[int64]*domain.Question)
 
 	return result
 }
